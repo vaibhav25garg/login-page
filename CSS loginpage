@@ -1,0 +1,144 @@
+@import url('<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    color: #fff;
+}
+body{
+    background: url(photo1610081001.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+}
+.login-section{
+    border: 2px solid #0400ff;
+    height: 490px;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    transition: .3s;
+    overflow: hidden;
+}
+.login-section:hover{
+    box-shadow: 0 0 60px #011147;
+}
+.login-section .frombox{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.frombox h2{
+    text-align: center;
+    margin: 20px;
+    font-size: 35px;
+}
+.frombox .input-box{
+    width:340px;
+    height: 50%;
+    border-bottom: 2px solid #fff;
+    margin:30px 0;
+    position: relative;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-right: 28px;
+    color: #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0; 
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    transition: .3s ease;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 19px;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+}
+.remember-password{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-password label input{
+    accent-center: #ff0000;
+    margin-right: 3px;
+}
+.remember-password a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.remember-password a:hover{
+    color: blue;
+    text-decoration: none;
+}
+.btn{  
+    background-color:#fff;
+    margin: 5px 2px;
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    background: blue;
+    box-shadow: rgba(0,0,0,0.4);
+}
+.create-account{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 5px;
+}
+.create-account p a{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.create-account p a:hover{
+    color: #00d9ff;
+    font-weight: 600;
+}
+.login-section .frombox.register{
+    transform: translateY(-460px);
+    transition: transform .6s ease;
+}
+.login-section.active .frombox.register{
+    transform: translateY(0);
+    transition-delay: .7s; 
+}
+.login-section .frombox.login{
+    transform: translateY(0px);
+    transition: transform .7s;
+}
+.login-section.active .frombox.login{
+    transform: translateY(430px);
+    transition-delay: 0s; 
+}
