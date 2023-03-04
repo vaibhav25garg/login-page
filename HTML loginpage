@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Vaibhav strong</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="login-section">
+        <div class="frombox login">
+            <form action="">
+
+                <h2>SIGN IN</h2>
+                <div class="input box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" required>
+                    <label form="">Email</label>
+                </div>
+                <div class="input box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required>
+                    <label form="">Password</label>
+                </div>
+                <div class="remember-password">
+                    <label form=""><input type="checkbox" name="" id="">Remember Me</label>
+                    <a href="#">Forget Password</a>
+                </div>
+                <button class="btn"> Login In</button>
+                <div class="create-account">
+                    <p>Create an Account? <a href="#" class="register-link" >Sign Up</a></p>
+                </div>
+            </form>
+        </div>
+        <div class="frombox register">
+            <form action="">
+
+                <h2>SIGN UP</h2>
+                <div class="input box">
+                    <span class="icon">
+                        <i class='bx bxs-envelope'></i>
+                    </span>
+                    <input type="email" required>
+                    <label form="">Email</label>
+                </div>
+                <div class="input box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required>
+                    <label form="">Password</label>
+                </div>
+                <div class="input box">
+                    <span class="icon">
+                        <i class='bx bxs-lock-alt'></i>
+                    </span>
+                    <input type="password" required>
+                    <label form="">Confirm Password</label>
+                </div>
+                <button class="btn">Sign Up</button>
+                <div class="create-account">
+                    <p>Already have an Account? <a href="#" class="Login-link" >Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="login.js"></script>
+</body>
+</html>
